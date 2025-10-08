@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Ortland'; /* Choose a name for your font */
+    src: url('../fonts/Ortland.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+header {
+    background: linear-gradient(120deg, #e62b2b 40%, #ffb662 100%);
+    min-height: 840px; /* Adjust height as needed */
+    padding: 0 0 60px 0; /* Remove large top padding */
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* This centers vertically */
+}
+
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 24px;
+}
+
+header h1 {
+    margin: 0; /* Remove margin-top */
+    align-self: center;
+    font-family: 'Ortland', 'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, sans-serif;
+    font-size: 200px;
+    color:#272727;
+    letter-spacing: 0.03em; /* Adjust value as needed */
+
+}
+
+header h1 .curated {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.5em; /* Optional: make "curated" smaller */
+    font-style: italic; 
+    font-weight: 100;
+    color: #f7ffb4;       
+}
+body {
+    background: linear-gradient(135deg, #272727 70%, #5a4e4e 100%);
+    color: #f5f5f5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section {
+    color: #eeebeb;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem; /* Much smaller and more readable */
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.works-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+    padding: 24px 0;
+    width: 100%;           /* Use 100% so it fits parent/container */
+    max-width: 100vw;      /* Prevent overflow */
+    margin: 40px auto;     /* Center horizontally */
+    box-sizing: border-box;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.work-item img {
+    width: 100%;        /* Fill the grid cell */
+    max-width: 100%;    /* Prevent overflow */
+    height: auto;
+    border-radius: 16px;
+}
+
+@media (max-width: 900px) {
+    .works-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+@media (max-width: 600px) {
+    .works-gallery {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
+.work-item img[alt="Work 2"] {
+    max-width: 570px;
+}
+.work-item img[alt="Work 3"] {
+    max-width: 400px;
+}
+.work-item img[alt="Work 4"] {
+    max-width: 400px;
+}
+.work-item img[alt="Work 5"] {
+    max-width: 400px;
+}
+.work-item img[alt="Work 6"] {
+    max-width: 330px;
+}
+.work-item img[alt="Work 7"] {
+    max-width: 400px;
+}
+.work-item img[alt="Work 8"] {
+    max-width: 400px;
+}
+.studio-title {
+    font-size: 60px; /* Change to your preferred size */
+    color: #f7ffb4; /* Optional: change color */
+}
+
+.walk-font {
+    color: #ffffff;   /* Optional: change color */
+    font-style: italic; /* Optional: add style */
+}
+
+.enjoy-art {
+    font-style: italic;
+    font-size: 70px; /* Optional: adjust size */
+    color: #f7ffb4;  /* Optional: adjust color */
+    display: block;  /* Ensures it stays on its own line */
+    margin-top: 20px; /* Optional: add spacing */
+    text-align: right;
+}
+
+
+
+ul {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #f7ffb4;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 16px;
+    transition: background 0.2s, color 0.2s;
+}
+a:hover {
+    background: #1d1f20;
+    color: #f7ffb4;
+}
+
+footer {
+    background: linear-gradient(120deg, #e62b2b 40%, #ffb662 100%);
+    padding: 60px 0;
+    text-align: center;
+    color: #f7ffb4;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+p {
+    color: #444;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+button {
+    background: linear-gradient(90deg, #59a0b1 0%, #222 100%);
+    border: none;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(89,160,177,0.15);
+    transition: background 0.3s;
+}
+button:hover {
+    background: linear-gradient(90deg, #222 0%, #59a0b1 100%);
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}

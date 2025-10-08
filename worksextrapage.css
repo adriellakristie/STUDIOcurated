@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'Ortland'; /* Choose a name for your font */
+    src: url('../fonts/Ortland.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background: linear-gradient(120deg, #e62b2b 40%, #ffb662 100%);
+    min-height: 100px; /* Adjust height as needed */
+    padding: 0 0 60px 0; /* Remove large top padding */
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* This centers vertically */
+}
+
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 24px;
+}
+
+body {
+    background: linear-gradient(135deg, #272727 70%, #5a4e4e 100%);
+    color: #565656;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.center-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 100%;
+}
+
+
+
+.center-item img{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.connecting-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 8px; /* space between */
+  max-width: 75%; 
+  margin: 40px auto;
+}
+
+.connecting-grid2 .grid-item {
+  width: 100%; /* take full grid cell */
+}
+
+.connecting-grid2 .grid-item img {
+  width: 100%;   /* make image fill its cell */
+  height: auto;  /* keep aspect ratio */
+  display: block;
+  object-fit: cover; /* optional: crop to fit evenly */
+}
+
+.connecting-grid3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 30px; /* space between */
+  max-width: 75%; 
+  margin: 40px auto;
+}
+
+.connecting-grid3 .grid-item {
+  width: 100%; /* take full grid cell */
+}
+
+.connecting-grid3 .grid-item img {
+  width: 80%;   /* make image fill its cell */
+  height: auto;  /* keep aspect ratio */
+  display: block;
+  object-fit: cover; /* optional: crop to fit evenly */
+}
+
+.work-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 24px;
+    margin-bottom: 16px;
+}
+
+.work-item:hover {
+    transform: scale(1.05);
+}
+
+.work-title {
+    font-family: 'Ortland', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f5f5f5;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+}
+
+.works-heading {
+    text-align: center;
+    font-weight: bolder;
+    margin: 350px 0 100px 0; /* Increase top margin to move it down */
+    font-size: 4rem;
+    letter-spacing: 0.01em;
+    color: #f5f5f5;
+}
+
+.grid-heading{
+    text-align: center;
+    font-weight: bolder;
+    margin: 100px 0 60px 0; /* Increase top margin to move it down */
+    font-size: 3rem;
+    letter-spacing: 0.01em;
+    color: #f5f5f5;
+}
+
+.works-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px 0;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.slowmove-desc {
+    color: #989898;
+    max-width: 630px;         /* Limit width */
+    margin: 30px auto;        /* Center horizontally */
+    text-align: center;       /* Center text */
+    font-size: 17px;        /* Optional: adjust size */
+    line-height: 1.6;         /* Optional: improve readability */
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.portfolio-item img {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-left: 200px; 
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25); 
+
+}
+
+.portfolio-grid .portfolio-item {
+    display: flex;
+    flex-direction: column; /* Stack image and description vertically */
+    align-items: center;
+    gap: 8px;
+}
+
+.portfolio-grid .portfolio-item img,
+.portfolio-grid .portfolio-item video {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+/* Optionally, if you want to specifically exclude Title 3, 
+   you can use an attribute selector for the alt text: */
+.portfolio-grid .portfolio-item img[alt="Design 3"] {
+    width: auto;
+    height: auto;
+    object-fit: initial;
+}
+
+.portfolio-desc {
+    max-width: 500px;
+    color: #989898;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 16px 0;      /* Add vertical padding */
+    margin: 0 8px;        /* Add horizontal margin if needed */
+}
+
+.portfolio-desc .artwork-title {
+    font-size: 1.5rem;
+    color: #efeded;
+    font-weight: bold;
+    margin-bottom: 12px;
+    display: block;
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin: 100px 80px 100px 80px;
+
+}
+.connecting-grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;                 /* tweak this number for tighter spacing */
+    width: 90%;               /* make grid narrower than full screen */
+    max-width: 1000px;        /* cap so it doesn’t get too wide */
+    margin: 10px auto;        /* center it horizontally */
+    box-sizing: border-box;
+}
+
+.connecting-grid1 .portfolio-item img {
+    width: 100%;              /* fill the grid cell */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0px 5px 0px 0px;
+}
+
+.singlecenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 100%;
+}
+
+.singlecenter img {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+ul {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a {
+    color: #f7ffb4;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 16px;
+    transition: background 0.2s, color 0.2s;
+}
+a:hover {
+    background: #1d1f20;
+    color: #f7ffb4;
+}
+
+footer {
+    background: linear-gradient(135deg, #272727 70%, #5a4e4e 100%);
+    padding: 60px 0;
+    text-align: center;
+    color: #f7ffb4;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+button {
+    background: linear-gradient(90deg, #59a0b1 0%, #222 100%);
+    border: none;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(89,160,177,0.15);
+    transition: background 0.3s;
+}
+button:hover {
+    background: linear-gradient(90deg, #222 0%, #59a0b1 100%);
+}
+
+header, footer {
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0; /* Remove all margin */
+    padding: 60; /* Optional: remove padding */
+}

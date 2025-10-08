@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'Ortland'; /* Choose a name for your font */
+    src: url('../fonts/Ortland.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'trascity'; /* Choose a name for your font */
+    src: url('../fonts/Transcity DEMO.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+header {
+    background: linear-gradient(120deg, #e62b2b 40%, #ffb662 100%);
+    min-height: 840px; /* Adjust height as needed */
+    padding: 0 0 60px 0; /* Remove large top padding */
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* This centers vertically */
+}
+
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 24px;
+}
+
+header h1 {
+    margin: 0; /* Remove margin-top */
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150px;
+    color:#f7ffb4;
+    letter-spacing: 0.03em; /* Adjust value as needed */
+
+}
+header h1 .intro {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: #f7ffb4;
+    font-size: 0.7em; /* Add this line to make it smaller */
+}
+
+
+header h1 .REACH {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic; 
+    font-weight: 300;
+    color: #f7ffb4;  
+    text-decoration: underline;  
+    text-decoration-color: #f7ffb4 ;   
+}
+body {
+    background: linear-gradient(135deg, #272727 70%, #5a4e4e 100%);
+    color: #f5f5f5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section {
+    color: #eeebeb;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem; /* Much smaller and more readable */
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+.works-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+    padding: 24px 0;
+    margin: 40 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.work-item img {
+    max-width: 350px;    /* Smaller images */
+    border-radius: 16px; /* Optional: smaller radius */
+}
+.work-item img[alt="Work 2"] {
+    max-width: 570px;
+}
+.work-item img[alt="Work 4"] {
+    max-width: 400px;
+}
+.work-item img[alt="Work 5"] {
+    max-width: 400px;
+}
+.work-item img[alt="Work 6"] {
+    max-width: 410px;
+}
+.work-item img[alt="Work 7"] {
+    max-width: 400px;
+}
+.work-item img[alt="Work 8"] {
+    max-width: 400px;
+}
+.studio-title {
+    font-size: 60px; /* Change to your preferred size */
+    color: #f7ffb4; /* Optional: change color */
+}
+
+.walk-font {
+    color: #ffffff;   /* Optional: change color */
+    font-style: italic; /* Optional: add style */
+}
+
+.enjoy-art {
+    font-style: italic;
+    font-size: 70px; /* Optional: adjust size */
+    color: #f7ffb4;  /* Optional: adjust color */
+    display: block;  /* Ensures it stays on its own line */
+    margin-top: 20px; /* Optional: add spacing */
+    text-align: right;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: linear-gradient(120deg, #e62b2b 40%, #ffb662 100%);
+    border-radius: 24px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.20);
+}
+
+.contact-section h2 {
+    flex: 1;
+    font-family: ortland;
+    color: #f7ffb4;
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+}
+
+.contact-section form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    color: #f7ffb4;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    background: #fffbe6;
+    color: #312b2b;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background: linear-gradient(90deg, #ffb662 0%, #e62b2b 100%); /* orange to red */
+    color: #312b2b; /* dark text for contrast */
+    border: none;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(230,43,43,0.15);
+    transition: background 0.3s, color 0.3s;
+    margin-top: 12px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #e62b2b 0%, #ffb662 100%);
+    color: #fff;
+}
+
+.linkedin-btn {
+    background: linear-gradient(90deg,  #e62b2b 0%, #ffb662 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 18px;
+    box-shadow: 0 2px 8px rgba(0,119,181,0.15);
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+.linkedin-btn:hover {
+    background: linear-gradient(90deg, #e62b2b 0%, #ffb662 100%);
+    color: #f7ffb4;
+}
+
+
+ul {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #f7ffb4;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 16px;
+    transition: background 0.2s, color 0.2s;
+}
+a:hover {
+    background: #1d1f20;
+    color: #f7ffb4;
+}
+
+footer {
+    background: linear-gradient(120deg, #e62b2b 40%, #ffb662 100%);
+    padding: 60px 0;
+    text-align: center;
+    color: #f7ffb4;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+p {
+    color: #444;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+button {
+    background: linear-gradient(90deg, #59a0b1 0%, #222 100%);
+    border: none;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(89,160,177,0.15);
+    transition: background 0.3s;
+}
+button:hover {
+    background: linear-gradient(90deg, #222 0%, #59a0b1 100%);
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
