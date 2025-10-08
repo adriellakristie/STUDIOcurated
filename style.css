@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'Ortland'; /* Choose a name for your font */
-    src: url('../fonts/Ortland.otf');
+    font-family: 'Ortland';
+    src: url('fonts/Ortland.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-
 
 header {
     background: linear-gradient(120deg, #e62b2b 40%, #ffb662 100%);

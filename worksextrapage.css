@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Ortland'; /* Choose a name for your font */
-    src: url('../fonts/Ortland.otf');
+    src: url('fonts/Ortland.otf');
     font-weight: normal;
     font-style: normal;
 }

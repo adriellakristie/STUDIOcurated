@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Ortland'; /* Choose a name for your font */
-    src: url('../fonts/Ortland.otf');
+    src: url('fonts/Ortland.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ortland'; /* Choose a name for your font */
-    src: url('../fonts/LibreBodoni.otf');
+    src: url('fonts/LibreBodoni.otf');
     font-weight: normal;
     font-style: normal;
 }
