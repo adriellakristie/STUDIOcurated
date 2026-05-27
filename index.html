@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+
+        <title> My Page! </title>
+        <link rel="stylesheet" href="style.css" type=" "text/css" >
+    </head>
+    <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#gallery">Works</a></li>
+                <li><a href="artist.html">Artist</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>STUDIO! <span class="curated">Curated</span></h1>    </header>
+        <section>
+            <span class="studio-title">Take a <span class="walk-font">walk</span> through the studio.</span><br>
+            <span class="enjoy-art">Enjoy, art.</span>
+        </section>
+            <div class="works-gallery" id = "gallery">
+        <a href="slowmove.html" class="work-item">
+            <img src="slowmove.png" alt="Slow Move Bazaar">
+            <span class="work-title">Slow Move Bazaar</span>
+        </a>
+        <a href="rcscup.html" class="work-item">
+            <img src="rcscup.png" alt="Work 2">
+            <span class="RCS Cup">RCS Cup</span>
+        </a>
+        <a href="hawkscup.html" class="work-item">
+            <img src="hawkscup.png" alt="Work 3">
+            <span class="Hawks Cup">Hawks Cup</span>
+        </a>
+        <a href="bbpb.html" class="work-item">
+            <img src="bbpb.png" alt="BBPB">
+            <span class="work-title">Bye Bye Plastic Bags</span>
+        </a>
+        <a href="tedx.html" class="work-item">
+            <img src="tedx.png" alt="TEDx PasarBaru">
+            <span class="work-title">TEDx PasarBaru</span>
+        </a>
+        <a href="extra.html" class="work-item">
+            <img src="extra.png" alt="more works">
+            <span class="work-title">More Works</span>
+        </a>
+        <a href="loveada.html" class="work-item">
+            <img src="loveada.png" alt="Love, ADA">
+            <span class="work-title">Love, ADA</span>
+        </a>
+        <a href="villa.html" class="work-item">
+            <img src="villa.png" alt="Villa">
+            <span class="work-title">Villa Noah & Villa Dijabu</span>
+        </a>
+        <a href="selfunmasked.html" class="work-item">
+            <img src="selfunmasked.png" alt="Work 9">
+            <span class="work-title">Self Unmasked</span>
+        </a>
+    </div>
+        <footer> BY ADRIELLA KRISTIE </footer>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.15 });
+    
+      document.querySelectorAll('.work-item').forEach(item => {
+        observer.observe(item);
+      });
+    </script>
+    </body>
+</html>
